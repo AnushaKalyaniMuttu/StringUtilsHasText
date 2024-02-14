@@ -1,0 +1,13 @@
+import org.apache.commons.lang3.StringUtils;
+
+public class Main {
+    public static void main(String[] args) {
+        String text1 = "Hello, world!";
+        String text2 = "";
+        String text3 = "    "; // contains only whitespace
+        
+        System.out.println(StringUtils.hasText(text1)); // true
+        System.out.println(StringUtils.hasText(text2)); // false
+        System.out.println(StringUtils.hasText(text3)); // false
+    }
+}
